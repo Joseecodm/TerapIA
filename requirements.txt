@@ -1,0 +1,5 @@
+openai-whisper        
+gpt4all               
+pyttsx3               
+sounddevice           
+numpy                 
