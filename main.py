@@ -1,13 +1,14 @@
 import tkinter as tk
-from tkinter import scrolledtext, messagebox
+import shutil
+import threading
+import hashlib
 import whisper
 import sounddevice as sd
 import scipy.io.wavfile as wav
 import pyttsx3
+
+from tkinter import scrolledtext, messagebox
 from gpt4all import GPT4All
-import shutil
-import threading
-import hashlib
 
 # === Función para cifrar contraseñas ===
 def cifrar_contraseña(contraseña):
