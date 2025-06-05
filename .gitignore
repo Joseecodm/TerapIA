@@ -1,0 +1,60 @@
+# --------------------------------------
+# 1. Entorno virtual
+# --------------------------------------
+# Ignora la carpeta donde creaste el venv
+psicologo_env/
+venv/
+.env/                # si usas un .env separado
+
+# --------------------------------------
+# 2. Archivos compilados de Python
+# --------------------------------------
+**/__pycache__/
+**/*.py[cod]
+*.so
+
+# --------------------------------------
+# 3. Dependencias instaladas (pip)
+# --------------------------------------
+# Si usas requirements.txt, no hace falta ignorar pip directamente.
+# Pero en caso de que generes paquetes:
+*.egg-info/
+dist/
+build/
+
+# --------------------------------------
+# 4. Modelos y datos pesados
+# --------------------------------------
+# GPT4All y/o Whisper suelen tener archivos .bin muy grandes:
+modelos/*.bin
+*.bin
+
+# Ignora posibles grabaciones de audio temporales:
+*.wav
+*.mp3
+*.flac
+
+# --------------------------------------
+# 5. Salidas de PyInstaller (al crear el .exe)
+# --------------------------------------
+dist/
+build/
+*.spec
+
+# --------------------------------------
+# 6. Archivos de configuración local y editores
+# --------------------------------------
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Jupyter
+.ipynb_checkpoints/
+
+# --------------------------------------
+# 7. Otros temporales del sistema
+# --------------------------------------
+# MacOS
+.DS_Store
+# Windows
+Thumbs.db
